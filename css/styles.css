@@ -1,0 +1,364 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #FFFFFF, #F9F3E3);
+}
+
+.hero-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center 70%;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 15%, rgba(0, 0, 0, 0) 100%);
+}
+
+.hero-tagline {
+    position: absolute;
+    top: 17.5%;
+    left: 5%;
+}
+
+.hero-tagline span {
+    display: block;
+    color: #F9F3E3;
+    text-align: left;
+    font-size: 2.55em;
+    text-shadow: 0 4px 10px #513600;
+    letter-spacing: 0.03em;
+}
+
+.figtree {
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.figtree-regular {
+    font-weight: 400;
+}
+
+.figtree-medium {
+    font-weight: 500;
+}
+
+.figtree-bold {
+    font-weight: 700;
+}
+
+.figtree-extrabold {
+    font-weight: 800;
+}
+
+.georgia {
+    font-family: Georgia, serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.georgia-bold {
+    font-weight: 700;
+}
+
+.georgia-regular {
+    font-weight: 400;
+}
+
+.colour-main {
+    color: #513600;
+}
+
+.colour-subtext {
+    color: #6B4F1C;
+}
+
+.colour-hover {
+    color: #D4A373;
+}
+
+.colour-accent {
+    color: #F9F3E3;
+}
+
+.fixed-header {
+    position: fixed;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 96.1%;
+    background-color: #F9F3E3;
+    z-index: 1000;
+    border-radius: 20px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.fixed-header h1 {
+    font-size: 2.2rem;
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.fixed-header a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.fixed-header a div {
+    display: flex;
+    align-items: center;
+}
+
+#decor-left {
+    max-width: 4%;
+    height: auto;
+    position: fixed;
+    left: -2.3em;
+    top: 0.2em;
+}
+
+#decor-right {
+    max-width: 4%;
+    height: auto;
+    position: fixed;
+    right: -2.2em;
+    bottom: 0.1em;
+    rotate: 180deg;
+}
+
+.logoBR {
+    height: 4.6em;
+    width: auto;
+    display: inline-block;
+    margin: 15px 10px 15px 15px;
+    vertical-align: middle;
+    padding-left: 0.9em;
+}
+
+.nav-container {
+    display: flex;
+    gap: 4em;
+    align-items: center;
+    padding-right: 2.4em;
+    margin-left: auto;
+    letter-spacing: 0.04em;
+    font-size: 1.1rem;
+}
+
+.nav-container a {
+    padding: 0.5em 0.5em;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    display: none;
+    cursor: pointer;
+    width: 30px;
+    height: 22px;
+    position: relative;
+}
+
+#curPage {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+}
+
+#curPage::before {
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 2px;
+    border-radius: 3px;
+    background-color: #513600;
+    bottom: -4px;
+    left: -10%;
+}
+
+.promo-block {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    width: 89%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    box-shadow:
+        0 8px 12px 6px rgba(0, 0, 0, 0.15),
+        0 4px 4px 0 rgba(0, 0, 0, 0.3);
+    background-color: #F9F3E3;
+    outline: 5px dotted #6B4F1C;
+}
+
+.promo-block h1 {
+    margin-top: 55px;
+    margin-bottom: 0;
+    font-size: 5.8em;
+    color: #513600;
+}
+
+.promo-block h2 {
+    margin-top: 0;
+    margin-bottom: 55px;
+    font-size: 4.8em;
+    color: #6B4F1C;
+}
+
+.beans-image {
+    position: absolute;
+    max-width: 120px;
+    height: auto;
+    left: 30px;
+    top: -70px;
+}
+
+.flash {
+    animation: flash 5s ease-in-out infinite;
+}
+
+@keyframes flash {
+    0%, 100% {
+        color: #513600;
+    }
+    50% {
+        color: #D4A373;
+    }
+}
+
+.menu-sample {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.menu-sample h1 {
+    font-size : 4.8em;
+    color: #513600;
+    letter-spacing: 0.02em;
+}
+
+.menu-sample-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: -40px;
+}
+
+.menu-nav {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    margin-top: 20px;
+}
+
+.menu-nav input[type="radio"] {
+    display: none;
+}
+
+.menu-sample input[type="radio"] {
+    display: none;
+}
+
+.menu-nav label {
+    cursor: pointer;
+    opacity: 0.7;
+    transition: all 0.2s;
+}
+
+#coffee-tab:checked ~ .menu-nav label[for="coffee-tab"],
+#noncoffee-tab:checked ~ .menu-nav label[for="noncoffee-tab"],
+#pastries-tab:checked ~ .menu-nav label[for="pastries-tab"] {
+    opacity: 1;
+    border-bottom: 3px solid #513600;
+}
+
+.menu-content .menu-sample-row {
+    display: none;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+#coffee-tab:checked ~ .menu-content .coffee {
+    display: flex;
+}
+
+#noncoffee-tab:checked ~ .menu-content .noncoffee {
+    display: flex;
+}
+
+#pastries-tab:checked ~ .menu-content .pastries {
+    display: flex;
+}
+
+.menu-sample-item {
+    display: flex;
+    flex-direction: column;
+    outline: 5px solid #6B4F1C;
+    border-radius: 20px;
+    margin: 10px;
+    width: 20%;
+    height: 30%;
+    padding: 40px 40px 10px;
+}
+
+.menu-sample-image {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 20px;
+    outline: 5px solid #6B4F1C;
+}
+
+.menu-sample-item h2 {
+    font-size: 2.5em;
+    color: #513600;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#caramelWhipccino {
+    font-size: 2.05em;
+    color: #513600;
+    margin-top: 25px;
+    margin-bottom: 14px;
+}
+
+#strawberryShortcake {
+    font-size: 2em;
+    color: #513600;
+    margin-top: 25px;
+    margin-bottom: 14px;
+}
+
+#whipTopBrownie {
+    font-size: 2.05em;
+    color: #513600;
+    margin-top: 25px;
+    margin-bottom: 14px;
+}

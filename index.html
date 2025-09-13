@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="fixed-header" role="banner">
+        <div>
+            <img src="images/vanilla.png" id="decor-left" alt="Decorative Image">
+            <img src="images/vanilla.png" id="decor-right" alt="Decorative Image">
+        </div>
+        <a href="index.html">
+            <div class="georgia colour-main">
+                <img src="images/logoBR.png" class="logoBR" alt="Logo">
+                <h1 class="georgia-regular"><span class="georgia-bold">Whipping</span> Brew</h1>
+            </div>
+        </a>
+        <nav class="nav-container figtree">
+            <a href="index.html"><h2 id="curPage" class="figtree-medium colour-main">Home</h2></a>
+            <a href="menu.html"><h2 class="figtree-medium colour-main">Menu</h2></a>
+            <a href="events.html"><h2 class="figtree-medium colour-main">Events</h2></a>
+        </nav>
+    </header>
+    <div class="hero-container">
+        <img src="images/hero.png" class="hero-image" alt="Hero Image">
+        <div class="hero-gradient"></div>
+        <h1 class="hero-tagline figtree">
+            <span class="figtree-extrabold">Fresh Brews</span>
+            <span class="figtree-bold">Freshly Whipped.</span>
+        </h1>
+    </div>
+    <main>
+        <section class="promo-block figtree">
+            <img src="images/beans.png" class="beans-image" alt="Beans">
+            <h1 class="figtree-extrabold flash">LAUNCH PROMO - BUY 1 GET 1</h1>
+            <h2 class="figtree-medium">Double the whip, double the sip.</h2>
+        </section>
+        <section class="menu-sample figtree">
+            <h1 class="figtree-extrabold">Our Menu</h1>
+            <input type="radio" id="coffee-tab" name="menu" checked>
+            <input type="radio" id="noncoffee-tab" name="menu">
+            <input type="radio" id="pastries-tab" name="menu">
+            <div class="menu-content">
+                <div class="menu-sample-row coffee">
+                    <div class="menu-sample-item">
+                        <img src="images/whipped_latte.png" class="menu-sample-image" alt="Whipped Latte">
+                        <h2 class="figtree-bold">Whipped Latte</h2>
+                    </div>
+                    <div class="menu-sample-item">
+                        <img src="images/mocha_bliss.png" class="menu-sample-image" alt="Mocha Bliss">
+                        <h2 class="figtree-bold">Mocha Bliss</h2>
+                    </div>
+                    <div class="menu-sample-item">
+                        <img src="images/caramel_whipccino.png" class="menu-sample-image" alt="Caramel Whipccino">
+                        <h2 class="figtree-bold" id="caramelWhipccino">Caramel Whipccino</h2>
+                    </div>
+                </div>
+                <div class="menu-sample-row noncoffee">
+                    <div class="menu-sample-item">
+                        <img src="images/choco_dream.png" class="menu-sample-image" alt="Choco Dream">
+                        <h2 class="figtree-bold">Choco Dream</h2>
+                    </div>
+                    <div class="menu-sample-item">
+                        <img src="images/berry_bliss_shake.png" class="menu-sample-image" alt="Berry Bliss Shake">
+                        <h2 class="figtree-bold">Berry Bliss Shake</h2>
+                    </div>
+                    <div class="menu-sample-item">
+                        <img src="images/matcha_cloud.png" class="menu-sample-image" alt="Matcha Cloud">
+                        <h2 class="figtree-bold">Matcha Cloud</h2>
+                    </div>
+                </div>
+                <div class="menu-sample-row pastries">
+                    <div class="menu-sample-item">
+                        <img src="images/cream_puffs.png" class="menu-sample-image" alt="Cream Puffs">
+                        <h2 class="figtree-bold">Cream Puffs</h2>
+                    </div>
+                    <div class="menu-sample-item">
+                        <img src="images/strawberry_shortcake.png" class="menu-sample-image" alt="Strawberry Shortcake">
+                        <h2 class="figtree-bold" id="strawberryShortcake">Strawberry Shortcake</h2>
+                    </div>
+                    <div class="menu-sample-item">
+                        <img src="images/whip-top_brownie.png" class="menu-sample-image" alt="Whip-Top Brownie">
+                        <h2 class="figtree-bold" id="whipTopBrownie">Whip-Top Brownie</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-nav">
+                <label for="coffee-tab" class="figtree-extrabold colour-subtext">Coffee</label>
+                <label for="noncoffee-tab" class="figtree-extrabold colour-subtext">Non-Coffee</label>
+                <label for="pastries-tab" class="figtree-extrabold colour-subtext">Dessert</label>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
