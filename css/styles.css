@@ -21,6 +21,34 @@
     color: var(--c-accent);
 }
 
+.figtree {
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.georgia {
+    font-family: Georgia, serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.regular {
+    font-weight: 400;
+}
+
+.medium {
+    font-weight: 500;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.extrabold {
+    font-weight: 800;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -56,34 +84,6 @@ body {
         text-shadow: 0 4px 10px var(--c-main);
         letter-spacing: 0.03em;
     }
-}
-
-.figtree {
-    font-family: "Figtree", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-}
-
-.georgia {
-    font-family: Georgia, serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-}
-
-.regular {
-    font-weight: 400;
-}
-
-.medium {
-    font-weight: 500;
-}
-
-.bold {
-    font-weight: 700;
-}
-
-.extrabold {
-    font-weight: 800;
 }
 
 .fixed-header {
@@ -197,7 +197,7 @@ body {
     margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 10px;
+    border-radius: 25px;
     box-shadow:
             0 8px 12px 6px rgba(0, 0, 0, 0.15),
             0 4px 4px 0 rgba(0, 0, 0, 0.3);
@@ -285,14 +285,8 @@ body {
     margin-top: -40px;
 }
 
-#coffee-tab:checked ~ .menu-content .coffee {
-    display: flex;
-}
-
-#noncoffee-tab:checked ~ .menu-content .noncoffee {
-    display: flex;
-}
-
+#coffee-tab:checked ~ .menu-content .coffee,
+#noncoffee-tab:checked ~ .menu-content .noncoffee,
 #pastries-tab:checked ~ .menu-content .pastries {
     display: flex;
 }
@@ -336,7 +330,7 @@ body {
     font-size: 2em;
     color: var(--c-main);
     margin-top: 25px;
-    margin-bottom: 14px;
+    margin-bottom: 15px;
 }
 
 #whipTopBrownie {
@@ -344,4 +338,19 @@ body {
     color: var(--c-main);
     margin-top: 25px;
     margin-bottom: 14px;
+}
+
+.contact-block {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--c-main);
+    border-radius: 25px;
+    width: 89%;
+    margin: 100px auto;
+    & > img {
+        width: 50%;
+        height: auto;
+        border-radius: 20px;
+        margin: 45px;
+    }
 }
