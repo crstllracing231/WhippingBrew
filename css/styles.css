@@ -3,6 +3,7 @@
     --c-subtext: #6B4F1C;
     --c-hover: #D4A373;
     --c-accent: #F9F3E3;
+    --c-purewhite: #FFFFFF;
 }
 
 .colour-main {
@@ -19,6 +20,10 @@
 
 .colour-accent {
     color: var(--c-accent);
+}
+
+.colour-purewhite {
+    color: var(--c-purewhite);
 }
 
 .figtree {
@@ -76,14 +81,15 @@ body {
     position: absolute;
     top: 17.5%;
     left: 5%;
-    & > span {
-        display: block;
-        color: var(--c-accent);
-        text-align: left;
-        font-size: 2.55em;
-        text-shadow: 0 4px 10px var(--c-main);
-        letter-spacing: 0.03em;
-    }
+}
+
+.hero-tagline > span {
+    display: block;
+    color: var(--c-accent);
+    text-align: left;
+    font-size: 2.55em;
+    text-shadow: 0 4px 10px var(--c-main);
+    letter-spacing: 0.03em;
 }
 
 .fixed-header {
@@ -100,21 +106,24 @@ body {
     display: flex;
     align-items: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    & > h1 {
-        font-size: 2.2rem;
-        margin: 0;
-        display: inline-block;
-        vertical-align: middle;
-    }
-    & > a {
-        text-decoration: none;
-        display: flex;
-        align-items: center;
-        & > div {
-            display: flex;
-            align-items: center;
-        }
-    }
+}
+
+.fixed-header > h1 {
+    font-size: 2.2rem;
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.fixed-header > a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.fixed-header > a > div {
+    display: flex;
+    align-items: center;
 }
 
 #decor-left {
@@ -151,10 +160,11 @@ body {
     margin-left: auto;
     letter-spacing: 0.04em;
     font-size: 1.1rem;
-    & > a {
-        padding: 0.5em 0.5em;
-        text-decoration: none;
-    }
+}
+
+.nav-container > a {
+    padding: 0.5em 0.5em;
+    text-decoration: none;
 }
 
 .nav-toggle {
@@ -203,18 +213,20 @@ body {
             0 4px 4px 0 rgba(0, 0, 0, 0.3);
     background-color: var(--c-accent);
     outline: 5px dotted var(--c-subtext);
-    & > h1 {
-        margin-top: 55px;
-        margin-bottom: 0;
-        font-size: 5.8em;
-        color: var(--c-main);
-    }
-    & > h2 {
-        margin-top: 0;
-        margin-bottom: 55px;
-        font-size: 4.8em;
-        color: var(--c-subtext);
-    }
+}
+
+.promo-block > h1 {
+    margin-top: 55px;
+    margin-bottom: 0;
+    font-size: 5.8em;
+    color: var(--c-main);
+}
+
+.promo-block > h2 {
+    margin-top: 0;
+    margin-bottom: 55px;
+    font-size: 4.8em;
+    color: var(--c-subtext);
 }
 
 .beans-image {
@@ -245,11 +257,12 @@ body {
     text-align: center;
     margin-top: 100px;
     margin-bottom: 100px;
-    & > h1 {
-        font-size: 4.8em;
-        color: var(--c-main);
-        letter-spacing: 0.02em;
-    }
+}
+
+.menu-sample > h1 {
+    font-size: 4.8em;
+    color: var(--c-main);
+    letter-spacing: 0.02em;
 }
 
 .menu-nav {
@@ -257,13 +270,14 @@ body {
     justify-content: center;
     gap: 8em;
     margin-top: 38px;
-    & > label {
-        font-size: 2.5em;
-        color: var(--c-main);
-        cursor: pointer;
-        opacity: 0.7;
-        transition: all 0.2s;
-    }
+}
+
+.menu-nav > label {
+    font-size: 2.5em;
+    color: var(--c-main);
+    cursor: pointer;
+    opacity: 0.7;
+    transition: all 0.2s;
 }
 
 .menu-sample input[type="radio"] {
@@ -303,12 +317,13 @@ body {
     box-shadow:
             0 8px 12px 6px rgba(0, 0, 0, 0.15),
             0 4px 4px 0 rgba(0, 0, 0, 0.3);
-    & > h2 {
-        font-size: 2.5em;
-        color: var(--c-main);
-        margin-top: 20px;
-        margin-bottom: 10px;
-    }
+}
+
+.menu-sample-item > h2 {
+    font-size: 2.5em;
+    color: var(--c-main);
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 .menu-sample-image {
@@ -342,15 +357,119 @@ body {
 
 .contact-block {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     background-color: var(--c-main);
     border-radius: 25px;
     width: 89%;
-    margin: 100px auto;
-    & > img {
-        width: 50%;
-        height: auto;
-        border-radius: 20px;
-        margin: 45px;
-    }
+    margin: 150px auto;
+}
+
+.contact-block > img {
+    width: 48%;
+    height: auto;
+    border-radius: 20px;
+    margin: 45px 45px 45px 0;
+}
+
+.contact-block .info {
+    margin-left: -15px;
+    display: flex;
+    flex-direction: column;
+    padding: 45px;
+    gap: 50px;
+}
+
+.contact-block .info .info-entry {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
+.contact-block .info .info-entry .icon {
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+    background-color: var(--c-accent);
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-shrink: 0;
+}
+
+.contact-block .info .info-entry .icon > img {
+    width: 60px;
+    height: 60px;
+}
+
+.contact-block .info .info-entry .info-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-block .info .info-entry h1 {
+    font-size: 3.5em;
+    letter-spacing: 0.02em;
+    margin: -3px 0 0;
+}
+
+.contact-block .info .info-entry span {
+    font-size: 2.5em;
+    letter-spacing: 0.02em;
+    margin: -3px 0 0;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: var(--c-main);
+    border-radius: 25px 25px 0 0;
+    width: 100%;
+    margin: 0;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.footer > a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.footer > a > img {
+    height: 4.6em;
+    width: auto;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    padding-right: 0.9em;
+}
+
+.footer > a > h1 {
+    font-size: 2.2rem;
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.footer > h3 {
+    margin-left: auto;
+}
+
+.foot-nav-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 4em;
+    align-items: center;
+}
+
+.foot-nav-container > a {
+    text-decoration: none;
 }
