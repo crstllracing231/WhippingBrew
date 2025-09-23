@@ -5,7 +5,8 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Events</title>
+    <title>Events - Whipping Brew</title>
+    <link rel="icon" href="images/logoBR.png" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,21 +14,34 @@
 </head>
 <body>
     <header class="fixed-header" role="banner">
-        <div>
-            <img src="images/vanilla.png" id="decorLeft" alt="Decorative Image">
-            <img src="images/vanilla.png" id="decorRight" alt="Decorative Image">
-        </div>
+        <img src="images/vanilla.png" id="decor-left" alt="Decorative Image">
+        <img src="images/vanilla.png" id="decor-right" alt="Decorative Image">
         <a href="index.html">
-            <div>
-                <img src="images/logoBR.png" class="logoBR" alt="Logo">
-                <h1 class="georgia georgia-regular colour-main"><span class="georgia georgia-bold colour-main">Whipping</span> Brew</h1>
+            <div class="georgia colour-main">
+                <img src="images/logoBR.png" alt="Header Logo">
+                <h1 class="regular"><span class="bold">Whipping</span> Brew</h1>
             </div>
         </a>
-        <nav class="nav-container">
-            <a href="index.html"><h2 class="figtree medium colour-main">Home</h2></a>
-            <a href="menu.html"><h2 class="figtree medium colour-main">Menu</h2></a>
-            <a href="events.html"><h2 id="curPage" class="figtree medium colour-main">Events</h2></a>
+        <nav class="nav-container figtree">
+            <a href="index.html"><h2 class="medium colour-main">Home</h2></a>
+            <a href="menu.html"><h2 class="medium colour-main">Menu</h2></a>
+            <a href="events.html"><h2 id="curPage" class="medium colour-main">Events</h2></a>
         </nav>
     </header>
+    <main>
+        <section class="hero-container">
+            <img src="images/hero_events.png" class="hero-image darker-image" alt="Hero Image">
+            <div class="hero-gradient"></div>
+            <h1 class="hero-tagline-menu figtree">
+                <span class="extrabold">Events</span>
+            </h1>
+        </section>
+        <section class="events-cards figtree">
+            <div class="live-music-nights hover-bg">
+                <h2 class="extrabold">Live Music Nights</h2>
+                <h3 class="regular">7PM Onwards | Fridays & Saturdays</h3>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

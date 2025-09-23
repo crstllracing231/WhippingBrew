@@ -523,6 +523,67 @@ body {
     margin: 0 0 9.375rem 0;
 }
 
+.events-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5rem;
+    padding: 0 2rem;
+}
+
+.live-music-nights {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    border-radius: 1.25rem;
+    background-color: var(--c-accent);
+    outline: 0.3125rem solid var(--c-main);
+    width: clamp(10rem, 90vw, 100rem);
+    z-index: 1;
+    overflow: hidden;
+    color: var(--c-main);
+    transition: color 0.5s ease-in-out;
+}
+
+.live-music-nights::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("../images/live_music_nights.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: blur(0.1rem);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.live-music-nights:hover::before {
+    opacity: 1;
+}
+
+.live-music-nights:hover {
+    color: var(--c-purewhite);
+}
+
+.live-music-nights > * {
+    position: relative;
+    z-index: 2;
+}
+
+.live-music-nights > h2 {
+    font-size: clamp(3rem, 4vw, 3.5rem);
+    margin: 10rem 0 0 0;
+}
+
+.live-music-nights > h3 {
+    font-size: clamp(2.5rem, 3vw, 3rem);
+    margin: 0 0 10rem 0;
+}
+
 @media (max-width: 768px) {
     .fixed-header > a > div > h1 {
         display: none;
