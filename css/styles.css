@@ -168,23 +168,6 @@ body {
     text-decoration: none;
 }
 
-@media (max-width: 768px) {
-    .fixed-header > a > div > h1 {
-        display: none;
-    }
-    .fixed-header > a > div > img {
-        margin: 0.9375rem 0.9375rem 0.9375rem 0;
-        height: 3.5rem;
-        width: auto;
-    }
-    .nav-container {
-        padding-right: 0;
-    }
-    #decor-left, #decor-right {
-        display: none;
-    }
-}
-
 #curPage {
     position: relative;
     display: inline-block;
@@ -240,19 +223,6 @@ body {
     height: auto;
     left: 1.875rem;
     top: -4.375rem;
-}
-
-@media (max-width: 768px) {
-    .beans-image {
-        max-width: 5rem;
-        top: -3.125rem;
-    }
-    .promo-block > h1 {
-        margin-top: 2rem;
-    }
-    .promo-block > h2 {
-        margin-bottom: 2rem;
-    }
 }
 
 .flash {
@@ -411,13 +381,13 @@ body {
 }
 
 .contact-block .info .info-entry h1 {
-    font-size: clamp(1.5rem, 3vw, 3.5rem);
+    font-size: clamp(1.7rem, 3vw, 3.5rem);
     letter-spacing: 0.02rem;
     margin: -0.1875rem 0 0;
 }
 
 .contact-block .info .info-entry span {
-    font-size: clamp(1.2rem, 2.5vw, 2.5rem);
+    font-size: clamp(1.4rem, 2.5vw, 2.5rem);
     letter-spacing: 0.02rem;
     margin: -0.1875rem 0 0;
 }
@@ -478,6 +448,47 @@ body {
 }
 
 @media (max-width: 768px) {
+    .fixed-header > a > div > h1 {
+        display: none;
+    }
+    .fixed-header > a > div > img {
+        margin: 0.9375rem 0.9375rem 0.9375rem 0;
+        height: 3.5rem;
+        width: auto;
+    }
+    .nav-container {
+        padding-right: 0;
+    }
+    #decor-left, #decor-right {
+        display: none;
+    }
+    
+    .beans-image {
+        max-width: 5rem;
+        top: -3.125rem;
+    }
+    .promo-block > h1 {
+        margin-top: 2rem;
+    }
+    .promo-block > h2 {
+        margin-bottom: 2rem;
+    }
+    
+    .contact-block .info .info-entry {
+        gap: 1.25rem;
+    }
+    .contact-block .info {
+        padding: 0 2.8125rem 2.8125rem 2.8125rem;
+    }
+    .contact-block .info .info-entry .icon {
+        width: 3rem;
+        height: 3rem;
+    }
+    .contact-block .info .info-entry .icon > img {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    
     .foot-nav-container {
         display: none;
     }
