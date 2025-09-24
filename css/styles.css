@@ -528,7 +528,7 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2.5rem;
+    gap: 4rem;
     padding: 0 2rem;
 }
 
@@ -542,7 +542,7 @@ body {
     border-radius: 1.25rem;
     background-color: var(--c-accent);
     outline: 0.3125rem solid var(--c-main);
-    width: clamp(10rem, 90vw, 100rem);
+    width: clamp(10rem, 88vw, 100rem);
     z-index: 1;
     overflow: hidden;
     color: var(--c-main);
@@ -582,6 +582,66 @@ body {
 .live-music-nights > h3 {
     font-size: clamp(2.5rem, 3vw, 3rem);
     margin: 0 0 10rem 0;
+}
+
+.minor-event {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    border-radius: 1.25rem;
+    background-color: var(--c-accent);
+    outline: 0.3125rem solid var(--c-main);
+    width: clamp(40rem, 45vw, 45rem);
+    z-index: 1;
+    overflow: hidden;
+    color: var(--c-main);
+    transition: color 0.5s ease-in-out;
+    margin-bottom: 9.375rem
+}
+
+.minor-event::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    filter: blur(0.1rem);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.minor-event:hover::before {
+    opacity: 1;
+}
+
+.minor-event:hover {
+    color: var(--c-purewhite);
+}
+
+.minor-event > * {
+    position: relative;
+    z-index: 2;
+}
+
+.minor-event > h2 {
+    font-size: clamp(2rem, 3vw, 2.5rem);
+    margin: 10rem 0 0 0;
+}
+
+.minor-event > h3 {
+    font-size: clamp(1.5rem, 2vw, 2rem);
+    margin: 0 0 10rem 0;
+}
+
+#book-club-meets::before {
+    background-image: url("../images/book_club_meets.jpg");
+}
+
+#barista-workshop::before {
+    background-image: url("../images/barista_workshop.jpg");
 }
 
 @media (max-width: 768px) {
