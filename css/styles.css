@@ -472,7 +472,7 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2.5rem;
+    gap: 4rem;
     padding: 0 2rem;
 }
 
