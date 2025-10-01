@@ -15,3 +15,5 @@ Developed and Designed by:
 * Media queries for phone layouts.
 * Consistent, clean, cosy design across all pages.
 * Semantic HTML structure.
+
+Preview: https://crstllracing231.github.io/WhippingBrew/
